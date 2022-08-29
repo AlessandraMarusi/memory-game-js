@@ -26,6 +26,10 @@ header {
     color: white;
 }
 
+.grid-container {
+    padding-top: 5vh;
+}
+
 /* TIMER */
 #countdown-timer {
     position: absolute;
@@ -35,9 +39,7 @@ header {
     color: white;
 }
 
-.grid-container {
-    padding: 5vh;
-}
+
 #main-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -189,3 +191,9 @@ header {
     bottom: 0;
 }
 /* #endregion */
+
+@media only screen and (min-width: 425px) {
+    .grid-container {
+        padding: 5vh;
+    }
+}
